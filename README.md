@@ -30,7 +30,7 @@ O certificado que já funciona no Swagger do RENAVE normalmente atende aos requi
 ## Instalação rápida
 
 1. Baixe o código em **Code > Download ZIP** nesta página.
-2. Descompacte o arquivo em uma pasta local.
+2. **Descompacte todo o arquivo** em uma pasta local. Não execute o sistema diretamente de dentro do ZIP.
 3. Dê dois cliques em `INICIAR.bat`.
 4. Na primeira execução, aguarde a instalação dos componentes.
 5. O navegador abrirá `http://localhost:3000`.
@@ -102,6 +102,14 @@ Consulte também a [política de segurança](SECURITY.md).
 - Abra `certmgr.msc` e verifique a pasta **Pessoal > Certificados**.
 - Confirme que o certificado está válido e pertence à cadeia ICP-Brasil.
 - Execute o portal com o mesmo usuário utilizado para acessar o Swagger.
+
+### Erro ao executar `INICIAR.bat`
+
+- Confirme que o ZIP foi completamente descompactado antes da execução.
+- Não execute `INICIAR.bat` dentro da visualização de arquivos compactados do Windows.
+- Verifique se o Node.js 22 ou superior está instalado.
+- Feche outro programa que esteja utilizando a porta 3000.
+- Leia a mensagem mantida na janela: o inicializador agora informa se faltam arquivos, Node.js, acesso à internet ou componentes.
 
 ### Erro 401 ou 403 do RENAVE
 
